@@ -49,3 +49,8 @@
     border: 1px solid hsl(0, 100%, 35%);
 
 }
+.button.small{
+    padding: 4px 8px;
+    font-size: 14px;
+    border-radius: 3px;
+}
