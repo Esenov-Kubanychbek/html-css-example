@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+:root {
+    --hue-default: 40;
+    --hue-ok: 110;
+    --hue-danger: 0;
+}
+
 .button{
     border-radius: 4px;
     padding: 6px 12px;
     font-size: 16px;
     display: inline-block;
-    background-color: hsl(40, 100%, 45%) ;
-    border: 1px solid hsl(40, 100%, 45%);
+    background-color: hsl(var(--hue-ok), 100%, 45%) ;
+    border: 1px solid hsl(var(--hue-ok), 100%, 45%);
     color: hsl(0, 100%, 100%);
     font-family: 'Roboto', serif;
     text-decoration: none;
@@ -24,16 +31,16 @@
 
 }
 .button.ok{
-    background-color: hsl(110, 100%, 45%) ;
-    border: 1px solid hsl(110, 100%, 45%);
+    background-color: hsl(var(--hue-ok), 100%, 45%) ;
+    border: 1px solid hsl(var(--hue-ok), 100%, 45%);
 }
 .button.ok:hover{
-    background-color: hsl(110, 100%, 35%) ;
-    border: 1px solid hsl(110, 100%, 35%);   
+    background-color: hsl(var(--hue-ok), 100%, 35%) ;
+    border: 1px solid hsl(var(--hue-ok), 100%, 35%);   
 }
 .button:active{
-    background-color: hsl(110, 100%, 35%) ;
-    border: 1px solid hsl(110, 100%, 35%);
+    background-color: hsl(var(--hue-ok), 100%, 35%) ;
+    border: 1px solid hsl(var(--hue-ok), 100%, 35%);
 
 }
 .button.danger{
@@ -53,4 +60,9 @@
     padding: 4px 8px;
     font-size: 14px;
     border-radius: 3px;
+}
+.button.large{
+    padding: 8px 16px;
+    font-size: 18px;
+    border-radius: 5px;
 }
